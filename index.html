@@ -35,18 +35,24 @@ body {
     left: 50%;
     top: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(to right, #f20f31, #0b70eb);
+    color: #5f27cd; /* 备用纯色字体 */
+    background: linear-gradient(90deg, #ff6b6b, #5f27cd);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 .textone {
     position: absolute;
     left: 50%;
     top: 40%;
     transform: translateX(-50%);
-    background: linear-gradient(to right, #e90707, #0d8af0);
+    color: #5f27cd; /* 备用纯色字体 */
+    background: linear-gradient(90deg, #ff6b6b, #5f27cd);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: transparent;
  
 }
 .textthree {
@@ -54,9 +60,12 @@ body {
     left: 50%;
     top: 60%;
     transform: translateX(-50%);
-    background: linear-gradient(to right, #f80b33, #0b8ef9);
+    color: #5f27cd; /* 备用纯色字体 */
+    background: linear-gradient(90deg, #ff6b6b, #5f27cd);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 :root {
     --margin-top: 0;
@@ -214,22 +223,28 @@ let textone = document.querySelector('.textone').querySelector('h1');
 let texttwo = document.querySelector('.texttwo').querySelector('h1');
 let textthree = document.querySelector('.textthree').querySelector('h1');
 
-      setTimeout(function(){
+setTimeout(function(){
         textone.innerHTML = '这一生，我们来彼此守护';
-        textone.innerHTML = '乐乐and燕燕';
-          textone.style.color = '#E8F9FD';
-          textone.style.fontFamily = '楷体'
-          texttwo.style.color = '#E8F9FD';
-          texttwo.style.fontFamily = '楷体'
-          textthree.style.color = '#E8F9FD';
-          textthree.style.fontFamily = '楷体'
-          texttwo.innerHTML = '';
+        texttwo.innerHTML = '燕燕and乐乐';
+          // textone.style.color = '#E8F9FD';
+          // textone.style.fontFamily = '楷体'
+          // texttwo.style.color = '#E8F9FD';
+          // texttwo.style.fontFamily = '楷体'
+          // textthree.style.color = '#E8F9FD';
+          // textthree.style.fontFamily = '楷体'
+          textthree.innerHTML = '';
       },6000)
+      setTimeout(function(){
+        textone.innerHTML = '我们永不分离💗';
+        texttwo.innerHTML = 'Forever';
+        textthree.innerHTML = '';
+      },12000)
       setTimeout(function(){
         textone.innerHTML = '我们携手同行';
         texttwo.innerHTML = '用彼此的温柔度过四季';
         textthree.innerHTML = 'Forever';
-      },12000)
+        textfour.innerHTML = '';
+      },18000)
 
 
  
