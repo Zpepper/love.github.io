@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>今晚，整片星空将为你一人闪烁</title>
+    <title>相思相见知何日，此时此夜难为情</title>
     <style>
       *{
     margin: 0;
@@ -35,7 +35,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(to right, #e03ca9, #4b90e5);
+    background: linear-gradient(to right, #f20f31, #0b70eb);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -44,7 +44,7 @@ body {
     left: 50%;
     top: 40%;
     transform: translateX(-50%);
-    background: linear-gradient(to right, #dd77c2, #519fe0);
+    background: linear-gradient(to right, #e90707, #0d8af0);
     background-clip: text;
     -webkit-text-fill-color: transparent;
  
@@ -54,6 +54,9 @@ body {
     left: 50%;
     top: 60%;
     transform: translateX(-50%);
+    background: linear-gradient(to right, #f80b33, #0b8ef9);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 :root {
     --margin-top: 0;
@@ -108,10 +111,10 @@ animation-delay: var(--animation-delay);
     
     <div class="container"></div>
     <script >
-       // poem
+      
 var words=[
-    '伤心桥下春波绿',
-    '曾是惊鸿照影来',
+    '只愿妻心似我心',
+    '定不负相思意',
     '当年明月在',
     '曾照彩云归',
     '归去来兮',
@@ -121,10 +124,10 @@ var words=[
     '与君重逢',
     '一日不见兮',
     '思之若狂',
-    '好想回到那个夏天',
-    '趴在桌子上偷偷看你',
-    '偷偷表白一个叫yhy的女孩',
-    '你曾是我灰色人生中的一道彩虹',
+    '入我相思门',
+    '知我相思苦',
+    '有一位叫yhy的女孩',
+    '你是我人生中的一道彩虹',
     '柳絮空缱绻',
     '南风知不知',
     '我见青山多妩媚',
@@ -190,7 +193,7 @@ function init(){
     let word = document.createElement('div');
         word.innerText = w;
         word.classList.add('word');
-        word.style.color = '#BAABDA';
+        word.style.color = 'HotPink';
         word.style.fontFamily = '楷体';
         word.style.fontSize = '20px'
         word_box.classList.add('word-box');
@@ -208,8 +211,8 @@ function init(){
 }
 window.addEventListener('load',init);
 let textone = document.querySelector('.textone').querySelector('h1');
-      let texttwo = document.querySelector('.texttwo').querySelector('h1');
-      let textthree = document.querySelector('.textthree').querySelector('h1');
+let texttwo = document.querySelector('.texttwo').querySelector('h1');
+let textthree = document.querySelector('.textthree').querySelector('h1');
 
       setTimeout(function(){
         textone.innerHTML = '这一生，我们来彼此守护';
