@@ -254,38 +254,8 @@ setTimeout(function(){
         textone.innerHTML = '视频怪物即将出现';
         texttwo.innerHTML = '请宝贝别忘点击屏幕哦';
         textthree.innerHTML = '';
-        let wordBoxElements = document.querySelectorAll('.word-box');
-            wordBoxElements.forEach(function (wordBox) {
-                // 将动画持续时间设置为0，使动画瞬间完成，相当于停止动画
-                wordBox.style.setProperty("--animation-duration", "0s");
-                // 将动画延迟设置为0，消除可能的延迟启动效果
-                wordBox.style.setProperty("--animation-delay", "0s");
-
-                // 清空word_box元素下的word元素中的文字内容
-                let wordElements = wordBox.querySelectorAll('.word');
-                wordElements.forEach(function (word) {
-                    word.innerText = '';
-                });
-            });
       },23000)
-      setTimeout(function () {
-            // 获取要添加视频的div元素
-            var videoContainer = document.getElementById('videoContainer');
-
-            // 创建一个新的video元素
-            var video = document.createElement('video');
-            video.src = 'video\c5c3f873681e88fe649b0395dce04eea.mp4'; // 这里替换成你实际的视频路径
-            video.controls = true; // 设置显示视频播放控制条
-            
-
-            // 将视频元素添加到div元素中
-            videoContainer.appendChild(video);
-
-            // 这里也可以继续清空textone元素的内容（如果有textone元素且需要这么做的话）
-            textone.innerHTML = '';
-
-        }, 25000);
-
+      
  
 
 
