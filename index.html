@@ -67,18 +67,6 @@ body {
     -webkit-text-fill-color: transparent;
     color: transparent;
 }
-.textfour {
-    position: absolute;
-    left: 50%;
-    top: 60%;
-    transform: translateX(-50%);
-    color: #5f27cd; /* 备用纯色字体 */
-    background: linear-gradient(90deg, #450ae7, #da1616);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-}
 :root {
     --margin-top: 0;
     --margin-left: 0;
@@ -111,20 +99,13 @@ animation-delay: var(--animation-delay);
     }
     
 }
-video {
-    max-width: 100%;
-    max-height: 100%;
-    /* 确保视频在父元素中间显示 */
-    margin: auto;
-    display: block;
-}
 
 
     </style>
   </head>
   <body>
     <video id="videofilm" poster="img\微信图片_20240823214307.jpg" autoplay muted loop>
-      <source src="video\6076331-uhd_3840_2160_30fps.mp4" >
+      <source src="video\6076331-uhd_3840_2160_30fps.mp4" type="video/mp4">
     </video>
     <div class="textone">
       <h1>燕衔春意送柔情</h1>
@@ -135,11 +116,8 @@ video {
     <div class="textthree">
       <h1></h1>
     </div>
-    <div class="textfour">
-      <h1></h1>
-    </div>
     <audio src="video/晴天.mp3" autoplay loop></audio>
-    <div id="videoContainer"></div>
+    
     <div class="container"></div>
     <script >
       
@@ -239,6 +217,8 @@ function init(){
     this.style.color = 'Blue';});
     word.addEventListener('mouseout', function () {
         this.style.color = 'HotPink';});
+
+
     })
     container.appendChild(f);
 }
@@ -246,18 +226,24 @@ window.addEventListener('load',init);
 let textone = document.querySelector('.textone').querySelector('h1');
 let texttwo = document.querySelector('.texttwo').querySelector('h1');
 let textthree = document.querySelector('.textthree').querySelector('h1');
-let textfour = document.querySelector('.textfour').querySelector('h1');
 
 setTimeout(function(){
         textone.innerHTML = '这一生，我们来彼此守护';
         texttwo.innerHTML = '燕燕and乐乐';
+          // textone.style.color = '#E8F9FD';
+          // textone.style.fontFamily = '楷体'
+          // texttwo.style.color = '#E8F9FD';
+          // texttwo.style.fontFamily = '楷体'
+          // textthree.style.color = '#E8F9FD';
+          // textthree.style.fontFamily = '楷体'
           textthree.innerHTML = '';
       },6000)
       setTimeout(function(){
         textone.innerHTML = '我们携手同行';
-        texttwo.innerHTML = '用彼此的温柔度过四季❤️‍🔥';
+        texttwo.innerHTML = '用彼此的温柔度过四季 ❤️‍🔥';
         textthree.innerHTML = 'Forever';
         textfour.innerHTML = '';
+        
       },12000)
       setTimeout(function(){
         textone.innerHTML = '我们永不分离💗';
@@ -288,7 +274,7 @@ setTimeout(function(){
 
             // 创建一个新的video元素
             var video = document.createElement('video');
-            video.src = 'video/Glowing-Star-Girl-4096x2160.mp4'; // 这里替换成你实际的视频路径
+            video.src = 'video\c5c3f873681e88fe649b0395dce04eea.mp4'; // 这里替换成你实际的视频路径
             video.controls = true; // 设置显示视频播放控制条
             
 
@@ -299,6 +285,9 @@ setTimeout(function(){
             textone.innerHTML = '';
 
         }, 25000);
+
+ 
+
 
  
  
